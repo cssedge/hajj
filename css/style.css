@@ -1,0 +1,156 @@
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.btn-primary {
+    background-color: #ab8659;
+    border: none;
+    transition: all .25s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #826644 !important;
+}
+
+
+
+.intro {
+    margin-bottom: 6rem
+}
+
+.intro .blockquote {
+    margin-left: 7%;
+    margin-right: 20%;
+    border-left: 2px solid #ab8659;
+    padding: 1rem 0;
+}
+
+.intro .blockquote p {
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+
+.aboutUs {
+    position: relative;
+    min-height: 20rem;
+    padding-bottom: 3rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 40%, rgba(0, 0, 0, 1) 40%);
+}
+
+.aboutImgContainer img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.aboutUs>.container-fluid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 6rem;
+    z-index: 0;
+    right: 0;
+    left: 35%;
+    border-radius: 20px 0 0 20px;
+    background: #f5f0eb url(../img/bg-pattern.jpg) repeat-x 0 0;
+}
+
+.aboutContent {
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    margin-bottom: 3rem;
+}
+
+.aboutContent .col-md-7 {
+    padding-left: 4rem;
+    padding-top: 7rem;
+}
+
+.aboutContent p {
+    padding-right: 12rem;
+}
+
+.btnReadMore {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: .85rem 2rem;
+    border-radius: 45px;
+}
+
+.btnReadMore span {
+    display: inline-block;
+    width: 25px;
+    background: #fff;
+    border-radius: 100%;
+    height: 25px;
+    margin-left: .60rem;
+}
+
+.btnReadMore span svg {
+    color: #ab8659;
+    width: 75%;
+}
+
+
+
+/* ================ Resposnive */
+@media only screen and (max-width: 1200px) {
+    .aboutContent p {
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .aboutContent .col-md-7 {
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+
+    .aboutContent .col-md-7 p {
+        padding-right: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .aboutUs {
+        background: transparent;
+    }
+
+    .aboutUs>.container-fluid::before {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .intro .blockquote {
+        margin-right: 10%;
+    }
+
+    
+
+    .aboutContent h2 {
+        margin-top: 1.5rem;
+    }
+}
